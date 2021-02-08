@@ -4,6 +4,7 @@ CFLAGS = -Os -DF_CPU=16000000UL -mmcu=atmega328p
 		 # optimizes for size since we don't have a big memory
 			 # sets clock rate to 16MHz
 								# chooses the microcontroller to compile for
+
 # compiling
 #all: blink.out
 
