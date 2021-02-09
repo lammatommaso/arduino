@@ -6,7 +6,7 @@ int interrupt_counter;
 ISR(TIMER0_COMPA_vect)
 {
     interrupt_counter++;
-    if( interrupt_counter > 10)
+    if( interrupt_counter > 100)
     {
         PORTB ^= 0b00100000;
         interrupt_counter = 0; //really important!!!
