@@ -15,7 +15,7 @@ int main()
 
     while(1)
     {
-        UDR0 = '8';
+        UDR0 = 'a';
         _delay_ms(1000);
     }
 
