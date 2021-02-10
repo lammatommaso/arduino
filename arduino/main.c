@@ -42,7 +42,7 @@ int main()
 	int i = 0;
 	unsigned int ubrr = BAUD_RATE_9600_BPS;
 	
-	unsigned char data = 0b00000000;
+	unsigned char data = 'Hello';
 	
 	/* Set Baudrate  */
 	UBRR0H = (ubrr>>8); // Shift the 16bit value ubrr 8 times to the right and transfer the upper 8 bits to UBBR0H register.

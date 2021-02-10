@@ -1,0 +1,7 @@
+rm *.elf
+rm *.o
+rm *.hex
+avr-gcc -mmcu=atmega328p -std=gnu99 -Wall -Os -o main.elf main.c -w 
+avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+avr-size --mcu=atmega328p --format=avr main.elf
+sudo avrdude -c usbasp -p atmega328p -U flash:w:"main.hex":a

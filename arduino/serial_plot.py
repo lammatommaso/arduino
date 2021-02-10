@@ -6,7 +6,7 @@ matplotlib.use("tkAgg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-ser = serial.Serial('/dev/ttyACM0')
+ser = serial.Serial('/dev/ttyUSB0')
 ser.flushInput()
 
 plot_window = 20
